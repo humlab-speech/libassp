@@ -1,0 +1,13 @@
+# This is a comment
+prefix=@prefix@   # this defines a variable
+exec_prefix=${prefix}  # defining another variable in terms of the first
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/@PACKAGE@
+
+Name: @PACKAGE@                            # human-readable name
+Description: Michel Scheffers' miscellaneous functions # human-readable description
+Version: @VERSION@
+Requires: 
+Conflicts:
+Libs: -L${libdir} -lmisc
+Cflags: -I${includedir}

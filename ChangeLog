@@ -1,0 +1,9 @@
+2008-01-16 Lasse Bombien <>
+	Adding mhs support, moving mhs.h from target libassp.la to header 
+
+2008-01-16 Lasse Bombien <>
+	add mhs support 
+
+2007-08-13 Lasse Bombien <>
+	move includes to proper directory 
+

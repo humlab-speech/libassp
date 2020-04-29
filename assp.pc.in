@@ -1,0 +1,13 @@
+# This is a comment
+prefix=@prefix@   # this defines a variable
+exec_prefix=${prefix}  # defining another variable in terms of the first
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/@PACKAGE@
+
+Name: @PACKAGE@                            # human-readable name
+Description: Advanced Speech Signal Processing # human-readable description
+Version: @VERSION@
+Requires: misc
+Conflicts:
+Libs: -L${libdir} -lassp
+Cflags: -I${includedir}
